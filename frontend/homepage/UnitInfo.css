@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+.unit-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.unit-card {
+  background-color: #1c1c1c;
+  color: white;
+  width: 250px;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.unit-card img {
+  width: 100%;
+  height: auto;
+}
+
+.unit-card button {
+  margin-top: 10px;
+  padding: 6px 10px;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}

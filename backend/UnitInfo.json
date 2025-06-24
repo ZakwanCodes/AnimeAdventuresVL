@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Shiny Dio Overheaven",
+        "rarity": "High SSS",
+        "image": "images/ShinyDio.png",
+        "demand": "4",
+        "value": "Owner Choice",
+        "trend": "Overpriced"
+    },
+    {
+        "id": "3",
+        "name": "Shiny Gohan",
+        "rarity": "SSS",
+        "image": "images/ShinyDio.png",
+        "demand": "5",
+        "value": "Owner Choice",
+        "trend": "Stable"
+    },
+    {
+        "id": "3",
+        "name": "Dio Overheaven",
+        "rarity": "SS",
+        "image": "images/ShinyDio.png",
+        "demand": "6.5",
+        "value": "36,000",
+        "trend": "Overpriced"
+    },
+    {
+        "id": "4",
+        "name": "Gohan",
+        "rarity": "SS",
+        "image": "images/ShinyDio.png",
+        "demand": "5.5",
+        "value": "32,000",
+        "trend": "Stable"
+    },
+    {
+        "id": "5",
+        "name": "Shiny Blue Devil",
+        "rarity": "SS",
+        "image": "images/ShinyDio.png",
+        "demand": "5.5",
+        "value": "29,500",
+        "trend": "Stable"
+    },
+    {
+        "id": "6",
+        "name": "Blue Devil",
+        "rarity": "SS",
+        "image": "images/ShinyDio.png",
+        "demand": "6",
+        "value": "21,000",
+        "trend": "Stable"
+    }
+]
