@@ -20,13 +20,16 @@
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .header-left-section img {
   width: auto;  
   height: 30px;
   background-color: white;
+}
+.header-left-section img:hover {
+    cursor:pointer;
 }
 
 .header-left-section form {
@@ -49,11 +52,10 @@
   flex: 2;
   justify-content: center;
   align-items: center;
-  margin: 5px;
 }
 
 .header-middle-section img {
-  width: 60%;
+  width: 55%;
   height: auto;
   max-height: 80px;
 }
@@ -62,7 +64,7 @@
 .header-right-section {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 10px;
  }
@@ -73,19 +75,22 @@
 .header-right-section button {
   height: 30px;
   width: 30px;
-  padding: 0;
-  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
-}
+}   
 
 .header-right-section img {
   height: 30px;
   width: auto;
   object-fit: contain;
 } 
+
+.header-right-section button:hover {
+  cursor: pointer;
+}
+
 
 
 
