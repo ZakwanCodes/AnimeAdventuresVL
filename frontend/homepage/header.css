@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;     /* or whatever you prefer */
+}
+
+/* Left section */
+.header-left-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-left-section img {
+  width: auto;  
+  height: 30px;
+  background-color: white;
+}
+
+.header-left-section form {
+  height: 30px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+
+}
+.header-left-section input {
+  height: 100%;
+}
+
+
+/* Middle section */
+.header-middle-section {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.header-middle-section img {
+  width: 60%;
+  height: auto;
+  max-height: 80px;
+}
+
+/* Right section */
+.header-right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+ }
+
+.header-right-section h3{
+  font-weight: normal;
+}
+.header-right-section button {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.header-right-section img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+} 
+
+
+
+
