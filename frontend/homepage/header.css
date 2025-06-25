@@ -56,10 +56,19 @@
   align-items: center;
 }
 
-.header-middle-section img {
+.header-middle-section a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header-middle-section a img {
   width: 55%;
   height: auto;
   max-height: 80px;
+  display: block;
 }
 
 /* Right section */

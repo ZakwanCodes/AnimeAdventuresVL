@@ -5,7 +5,7 @@
         "rarity": "High SSS",
         "image": "images/ShinyDio.png",
         "demand": "4",
-        "value": "Owner Choice",
+        "value": "Owners Choice",
         "trend": "Overpriced"
     },
     {
@@ -14,7 +14,7 @@
         "rarity": "SS",
         "image": "images/Dio.png",
         "demand": "6.5",
-        "value": "36,000",
+        "value": 36000,
         "trend": "Overpriced"
     },
     {
@@ -23,7 +23,7 @@
         "rarity": "SS",
         "image": "images/Gohan.png",
         "demand": "5.5",
-        "value": "32,000",
+        "value": 32000,
         "trend": "Stable"
     }
     

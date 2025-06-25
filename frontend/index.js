@@ -54,7 +54,7 @@ document.addEventListener('click', function (event) {
     if (existingUnit) {
       existingUnit.quantity += 1;
     } else {
-      inventory.push({ id: unitId, quantity: 1 });
+      inventory.push({ id: unitId, quantity: 1});
     }
 
     setStorage(inventory);
