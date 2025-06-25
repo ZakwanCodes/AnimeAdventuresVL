@@ -73,15 +73,7 @@
 
 .header-right-section h3{
   font-weight: normal;
-}
-.header-right-section button {
-  height: 30px;
-  width: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}   
+}  
 
 .header-right-section img {
   height: 30px;
@@ -89,9 +81,7 @@
   object-fit: contain;
 } 
 
-.header-right-section button:hover {
-  cursor: pointer;
-}
+
 
 
 
