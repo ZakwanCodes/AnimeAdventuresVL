@@ -1,4 +1,8 @@
 /* inventory.css */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Courier New', Courier, monospace;
@@ -46,14 +50,20 @@ body {
   color: #ccc;
 }
 
+
+
+
 .inventory-header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Spread out the 3 sections */
-  padding: 20px 40px;
+  justify-content: center;
+  padding: 60px 40px;
   margin-bottom: 40px;
   border-bottom: 1px solid #333;
   height: 100px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(117, 72, 243);;
 }
 
 .inventory-left-section,
@@ -63,13 +73,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-.inventory-left-section img {
-  width: 60%;       /* Controls image size */
+
+
+.inventory-middle-section img {
+  width: 80%;       /* Controls image size */
   height: auto;
-}
+}   
 
 /* Button common styles */
 .inventory-item button {

@@ -28,7 +28,7 @@ function generateInventoryHTML(inventory, allUnits) {
     html += `
       <div class="inventory-item" data-id="${unit.id}">
         <img src="${unit.image}" alt="${unit.name}">
-        <h3>Name: ${unit.name}</h3>
+        <h3>${unit.name}</h3>
         <h3>Value: ${unit.value}</h3>
         <p>Quantity: ${invItem.quantity}</p>
         <button class="remove-one">Remove One</button>
