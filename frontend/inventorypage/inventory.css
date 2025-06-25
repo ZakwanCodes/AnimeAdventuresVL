@@ -70,3 +70,35 @@ body {
   width: 60%;       /* Controls image size */
   height: auto;
 }
+
+/* Button common styles */
+.inventory-item button {
+  margin: 8px 4px 0;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* “Remove One” button */
+.inventory-item button.remove-one {
+  background-color: #444;
+  color: white;
+}
+
+.inventory-item button.remove-one:hover {
+  background-color: #666;
+}
+
+/* “Remove All” button */
+.inventory-item button.remove-all {
+  background-color: #dd1313;
+  color: white;
+}
+
+.inventory-item button.remove-all:hover {
+  background-color: #ff3b3b;
+}
+
