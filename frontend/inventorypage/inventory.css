@@ -78,7 +78,7 @@ body {
 
 
 .inventory-middle-section img {
-  width: 80%;       /* Controls image size */
+  width: 100%;       /* Controls image size */
   height: auto;
 }   
 

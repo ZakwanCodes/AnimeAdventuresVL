@@ -1,27 +1,27 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .header {
-  background-color: rgb(117, 72, 243);
-  color: white;
-  display: flex;
+   display: flex;
   align-items: center;
-  justify-content: center; 
-  height: 175px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 18px;  
+  justify-content: center;
+  padding: 60px 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #333;
+  height: 100px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(117, 72, 243);;
 }
-
 
 /* Left section */
 .header-left-section {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 
 .header-left-section img {
@@ -50,7 +50,7 @@
 /* Middle section */
 .header-middle-section {
   display: flex;
-  flex: 2;
+  flex: 1;
   justify-content: center;
   align-items: center;
 }
@@ -64,7 +64,7 @@
 }
 
 .header-middle-section a img {
-  width: 50%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -73,7 +73,7 @@
 .header-right-section {
   flex: 1;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   gap: 10px;
  }
