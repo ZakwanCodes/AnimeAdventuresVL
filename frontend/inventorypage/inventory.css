@@ -24,12 +24,12 @@ body {
   width: 220px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 0 10px #dd1313;
+  box-shadow: 0 0 10px white;
   transition: box-shadow 0.3s ease;
 }
 
 .inventory-item:hover {
-  box-shadow: 0 0 20px #ff3b3b;
+  box-shadow: 0 0 20px white;
 }
 
 .inventory-item img {

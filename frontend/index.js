@@ -1,62 +1,49 @@
-import { getStorage, setStorage } from './storage.js';
+let allUnits = []; // global unit data
 
+// Fetch units from backend
 async function loadUnits() {
   try {
     const response = await fetch('http://localhost:3000/api/units');
-    const units = await response.json();
-
-    const container = document.querySelector('.unit-container');
-    if (!container) {
-      console.log('No .unit-container on this page, skipping loadUnits');
-      return;
-    }
-
-    let cardsHTML = '';
-
-    units.forEach(function (unit) {
-      cardsHTML += `
-        <div class="unit-card">
-          <img src="${unit.image}" alt="${unit.name}">
-          <h3>${unit.name}</h3>
-          <p>Rarity: ${unit.rarity}</p>
-          <p>Value: ${unit.value}</p>
-          <p>Demand: ${unit.demand}</p>   
-          <p>Trend: ${unit.trend}</p>
-          <button class="add-to-inventory" data-id="${unit.id}">Add to Inventory</button>
-        </div>
-      `;
-    });
-
-    container.innerHTML = cardsHTML;
-
+    allUnits = await response.json();
+    renderUnits(allUnits); // render all units at start
   } catch (error) {
     console.log('Error fetching unit data:', error);
   }
 }
 
-// Only load units if on homepage (i.e., .unit-container exists)
-if (document.querySelector('.unit-container')) {
-  loadUnits();
+// Render given list of units
+function renderUnits(unitsToRender) {
+  const container = document.querySelector('.unit-container');
+  let cardsHTML = '';
+
+  unitsToRender.forEach(function (unit) {
+    cardsHTML += `
+      <div class="unit-card">
+        <img src="${unit.image}" alt="${unit.name}">
+        <h3>${unit.name}</h3>
+        <p>Rarity: ${unit.rarity}</p>
+        <p>Value: ${unit.value}</p>
+        <p>Demand: ${unit.demand}</p>   
+        <p>Trend: ${unit.trend}</p>
+        <button class="add-to-inventory" data-id="${unit.id}">Add to Inventory</button>
+      </div>
+    `;
+  });
+
+  container.innerHTML = cardsHTML;
 }
 
-// Listen for add-to-inventory clicks anywhere on the document
-document.addEventListener('click', function (event) {
-  if (event.target.classList.contains('add-to-inventory')) {
-    const unitId = event.target.getAttribute('data-id');
-    console.log(`Unit with id: ${unitId} added to inventory`);
+// Handle search input
+const searchInput = document.querySelector('.search-input');
 
-    let inventory = getStorage();
+searchInput.addEventListener('input', function () {
+  const searchTerm = searchInput.value.trim().toLowerCase();
 
-    const existingUnit = inventory.find(function (item) {
-      return item.id === unitId;
-    });
+  const filteredUnits = allUnits.filter(function (unit) {
+    return unit.name.toLowerCase().includes(searchTerm);
+  });
 
-    if (existingUnit) {
-      existingUnit.quantity += 1;
-    } else {
-      inventory.push({ id: unitId, quantity: 1});
-    }
-
-    setStorage(inventory);
-  }
+  renderUnits(filteredUnits);
 });
+
+loadUnits();
